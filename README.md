@@ -75,4 +75,6 @@ But most files are okay to edit, rename, or even remove; and you might even add 
 
 You will be working primarily in the **controllers** and **views** folders for this assignment.
 
+There is another README in the **controllers** directory that goes over how they work: https://github.com/omahacodeschool/web-toy__simple-application/tree/master/controllers
+
 That's all for now! Get to exploring, and enjoy working on your first Ruby web application!
