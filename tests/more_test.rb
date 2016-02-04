@@ -59,7 +59,7 @@ class MoreTest < Minitest::Test
   end
 
   def test_greeter_randomly
-    random_string = [*('A'..'Z')].sample(8).join
+    random_string = [*('A'..'Z')].sample(8).join.capitalize
 
     get "/greet/#{random_string}"
 
