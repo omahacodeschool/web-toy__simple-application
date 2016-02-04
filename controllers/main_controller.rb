@@ -14,14 +14,14 @@ MyApp.get "/about" do
   erb :"main/about"
 end
 
-MyApp.get "/favorites" do
-  erb :"main/favorites"
-end
+# MyApp.get "/favorites" do
+#   erb :"main/favorites"
+# end
 
-MyApp.get "/greet/Sumeet" do
-  erb :"main/greet/Sumeet"
-end
+# MyApp.get "/greet/Sumeet" do
+#   erb :"main/greet/Sumeet"
+# end
 
-MyApp.get "/greet/:num" do
-  erb :"main/greet/random_string"
-end
+# MyApp.get "/greet/:num" do
+#   erb :"main/greet/random_string"
+# end
