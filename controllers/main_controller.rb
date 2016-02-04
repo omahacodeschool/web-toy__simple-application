@@ -17,7 +17,3 @@ end
 MyApp.get "/about" do
    erb :"main/about"
 end
-
-MyApp.get "/greet/:name" do
-   erb :"main/greet"
-end
