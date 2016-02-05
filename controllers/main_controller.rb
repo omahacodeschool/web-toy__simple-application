@@ -9,3 +9,23 @@ MyApp.get "/" do
   # combined document back to the client.
   erb :"main/welcome"
 end
+
+MyApp.get "/about" do
+
+  erb :"main/about"
+end
+
+MyApp.get "/favorites" do
+
+  erb :"main/favorites"
+end
+
+MyApp.get "/greet/sumeet" do
+
+  erb :"main/greet/sumeet"
+end
+
+MyApp.get "/greet/:num" do
+
+  erb :"main/greet/person"
+end
