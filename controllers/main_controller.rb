@@ -1,3 +1,22 @@
+
+
+
+MyApp.get "/about" do
+  erb :"/main/about"
+end
+
+MyApp.get "/favorites" do
+  erb :"/main/favorites"
+end
+
+MyApp.get "/greet" do
+  erb :"/main/greet"
+end
+
+MyApp.get "/greet/Sumeet" do
+  erb :"/main/greet/Sumeet"
+end
+
 # The path being defined for this controller action is just "/", meaning 
 # the root path. It's the homepage.
 MyApp.get "/" do
@@ -8,4 +27,8 @@ MyApp.get "/" do
   # Then it will combine that view file with the layout file and sent the
   # combined document back to the client.
   erb :"main/welcome"
+end
+
+MyApp.get "/greet/:numb" do
+  erb :"/main/greet/x"
 end
