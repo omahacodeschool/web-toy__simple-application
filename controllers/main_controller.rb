@@ -17,3 +17,11 @@ end
 MyApp.get "/favorites" do
   erb :"main/favorites"
 end
+
+MyApp.get "/greet/Sumeet" do
+  erb :"greet/Sumeet"
+end
+
+MyApp.get "/greet/:num" do
+  erb :"greet/autofill"
+end
