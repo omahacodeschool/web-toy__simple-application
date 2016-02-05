@@ -1,3 +1,4 @@
+require 'string_segmenter.rb'
 # The path being defined for this controller action is just "/", meaning 
 # the root path. It's the homepage.
 MyApp.get "/" do
@@ -9,3 +10,26 @@ MyApp.get "/" do
   # combined document back to the client.
   erb :"main/welcome"
 end
+
+MyApp.get "/about" do
+erb :"main/about"
+end
+
+MyApp.get "/favorites" do
+  erb :"main/favorites"
+end
+
+MyApp.get "/" do
+  erb :"main/links"
+end
+
+MyApp.get "/greet/Sumeet" do
+  erb :"greet/sumeet"
+end
+
+MyApp.get "/:num" do
+  erb :"greet/mach1"
+end
+
+
+
