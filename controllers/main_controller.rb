@@ -10,16 +10,16 @@ MyApp.get "/" do
   erb :"main/welcome"
 end
 
-MyApp.get "/main/about" do
+MyApp.get "/about" do
   erb :"main/about"
 end
 
-MyApp.get "/main/favorites" do
+MyApp.get "/favorites" do
   erb :"main/favorites"
 end
 
-MyApp.get "/main/greet/:num" do
-  erb :"main/greet/"
+MyApp.get "/greet/:num" do
+  erb :"main/greet"
 end
 
 
