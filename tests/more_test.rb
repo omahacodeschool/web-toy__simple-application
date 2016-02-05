@@ -9,7 +9,7 @@ class MoreTest < Minitest::Test
 
   # The actual tests go below this comment.
 
-  def test_about
+  def test_about #works apparently
     get '/about'
 
     assert last_response.ok?
@@ -20,7 +20,7 @@ class MoreTest < Minitest::Test
   def test_favorite_things
     get '/favorites'
 
-    assert last_response.ok?
+    assert last_response.ok? #ok, starting to get the hang of this.
 
     assert_includes last_response.body, "These are a few of my favorite things"
   end
@@ -51,7 +51,7 @@ class MoreTest < Minitest::Test
   end
 
   def test_greeter_simply
-    get '/greet/Sumeet'
+    get '/greet/sumeet'
 
     assert last_response.ok?
 
