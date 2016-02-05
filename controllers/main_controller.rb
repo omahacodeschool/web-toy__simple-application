@@ -10,14 +10,14 @@ MyApp.get "/" do
   erb :"main/welcome"
 end
 
-MyApp.get "/:num" do   #"num" is placeholder because of colon 
-  erb :"main/welcome"
-end
-
 MyApp.get "/favorites" do   
   erb :"main/favorites"
 end
 
 MyApp.get "/about" do   
   erb :"main/about"
+end
+
+MyApp.get "/greet/:num" do
+  erb :"main/greet"
 end
