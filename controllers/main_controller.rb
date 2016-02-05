@@ -9,3 +9,46 @@ MyApp.get "/" do
   # combined document back to the client.
   erb :"main/welcome"
 end
+
+MyApp.get "/about" do
+  # If a GET request is made to the root path, the following line of code
+  # looks for a .erb view file located in the 'views' directory at the given
+  # location. So it's going to look for views/main/welcome.erb.
+  # 
+  # Then it will combine that view file with the layout file and sent the
+  # combined document back to the client.
+  erb :"main/about" 
+end
+
+MyApp.get "/favorites" do
+  # If a GET request is made to the root path, the following line of code
+  # looks for a .erb view file located in the 'views' directory at the given
+  # location. So it's going to look for views/main/welcome.erb.
+  # 
+  # Then it will combine that view file with the layout file and sent the
+  # combined document back to the client.
+  erb :"main/favorites" 
+end
+
+MyApp.get "/greet/:random_string" do
+  
+  # If a GET request is made to the root path, the following line of code
+  # looks for a .erb view file located in the 'views' directory at the given
+  # location. So it's going to look for views/main/welcome.erb.
+  # 
+  # Then it will combine that view file with the layout file and sent the
+  # combined document back to the client.
+  erb :"main/greet/random_string" 
+
+
+end
+
+MyApp.get "/greet/Sumeet" do
+  # If a GET request is made to the root path, the following line of code
+  # looks for a .erb view file located in the 'views' directory at the given
+  # location. So it's going to look for views/main/welcome.erb.
+  # 
+  # Then it will combine that view file with the layout file and sent the
+  # combined document back to the client.
+  erb :"main/greet/Sumeet" 
+end
