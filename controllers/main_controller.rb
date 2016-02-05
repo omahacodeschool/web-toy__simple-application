@@ -10,14 +10,14 @@ MyApp.get "/" do
   erb :"main/welcome"
 end
 
-MyApp.get "/" do
+MyApp.get "/favorites" do
   erb :"main/favorites"
 end
 
-MyApp.get "/" do
+MyApp.get "/about" do
   erb :"main/about"
 end
 
-MyApp.get "/" do
+MyApp.get "/greet/:num" do
   erb :"main/greet"
 end
