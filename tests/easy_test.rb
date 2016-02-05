@@ -14,7 +14,7 @@ class EasyTest < Minitest::Test
   def test_hello_world
     # This simulates an actual GET request to the given path, which
     # means it's fetching the actual homepage of our website.
-    get '/'
+    get "/"
 
     # The response that it receives is stored inside `last_response`, because
     # it is the "last response" that it asked for :)

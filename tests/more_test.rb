@@ -10,7 +10,7 @@ class MoreTest < Minitest::Test
   # The actual tests go below this comment.
 
   def test_about
-    get '/about'
+    get "/about"
 
     assert last_response.ok?
 
@@ -35,7 +35,7 @@ class MoreTest < Minitest::Test
   end
 
   def test_links_on_favorites
-    get '/favorites'
+    get "/favorites"
 
     assert last_response.ok?
 
